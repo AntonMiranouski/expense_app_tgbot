@@ -3,7 +3,6 @@ package by.home.expense_app_bot.cache;
 import by.home.expense_app_bot.botapi.BotState;
 import by.home.expense_app_bot.botapi.UserProfileData;
 
-
 public interface DataCache {
     void setUsersCurrentBotState(int userId, BotState botState);
 

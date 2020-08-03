@@ -13,11 +13,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * Формирует анкету пользователя.
- */
-
 @Slf4j
 @Component
 public class FillingHandler implements InputMessageHandler {

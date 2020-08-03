@@ -18,9 +18,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author Sergei Viacheslaev
- */
 @Component
 @Slf4j
 public class TelegramFacade {
@@ -73,7 +70,6 @@ public class TelegramFacade {
 
         return replyMessage;
     }
-
 
     private BotApiMethod<?> processCallbackQuery(CallbackQuery buttonQuery) {
         final long chatId = buttonQuery.getMessage().getChatId();
@@ -142,6 +138,4 @@ public class TelegramFacade {
 
         return inlineKeyboardMarkup;
     }
-
-
 }

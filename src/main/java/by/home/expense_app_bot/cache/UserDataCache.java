@@ -9,8 +9,6 @@ import java.util.Map;
 
 /**
  * In-memory cache.
- * usersBotStates: user_id and user's bot state
- * usersProfileData: user_id  and user's profile data.
  */
 
 @Component

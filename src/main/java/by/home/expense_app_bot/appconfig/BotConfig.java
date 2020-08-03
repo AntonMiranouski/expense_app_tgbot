@@ -12,7 +12,6 @@ import org.telegram.telegrambots.meta.ApiContext;
 import by.home.expense_app_bot.TelegramBot;
 import by.home.expense_app_bot.botapi.TelegramFacade;
 
-
 @Setter
 @Getter
 @Configuration
@@ -20,7 +19,7 @@ import by.home.expense_app_bot.botapi.TelegramFacade;
 public class BotConfig {
     private String webHookPath;
     private String botUserName;
-    private String botToken;
+    private String botToken = System.getenv("token");
 
     @Bean
     public TelegramBot myWizardTelegramBot(TelegramFacade telegramFacade) {

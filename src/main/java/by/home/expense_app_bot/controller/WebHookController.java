@@ -8,7 +8,6 @@ import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import by.home.expense_app_bot.TelegramBot;
 
-
 @RestController
 public class WebHookController {
     private final TelegramBot telegramBot;

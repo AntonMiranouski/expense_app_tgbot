@@ -1,12 +1,10 @@
 package by.home.expense_app_bot;
 
-
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramWebhookBot;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import by.home.expense_app_bot.botapi.TelegramFacade;
-
 
 public class TelegramBot extends TelegramWebhookBot {
     private String webHookPath;
@@ -20,7 +18,6 @@ public class TelegramBot extends TelegramWebhookBot {
         super(botOptions);
         this.telegramFacade = telegramFacade;
     }
-
 
     @Override
     public String getBotToken() {
@@ -55,5 +52,4 @@ public class TelegramBot extends TelegramWebhookBot {
     public void setBotToken(String botToken) {
         this.botToken = botToken;
     }
-
 }

@@ -11,6 +11,7 @@ import java.util.Map;
 /**
  * Defines message handlers for each state.
  */
+
 @Component
 public class BotStateContext {
     private Map<BotState, InputMessageHandler> messageHandlers = new HashMap<>();
